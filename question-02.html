@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            padding: 14px;
+            border-radius: 30px;
+            width: 180px;
+            background-color: #c31616d1;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .main:hover {
+            opacity: 0.8;
+        }
+
+        .main-disabled {
+            cursor: default;
+            background-color: #d4d4d4;
+        }
+
+        .main-disabled:hover {
+            opacity: unset;
+        }
+
+        .disable,
+        .enable {
+            background-color: transparent;
+            border: 1px solid #cac7c7;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.10);
+            border-radius: 3px;
+        }
+
+        .disable:focus,
+        .enable:focus {
+            outline: 0;
+        }
+
+        .main:focus {
+            outline: 0;
+        }
+    </style>
+    <title>Q2 – The Disabled Button</title>
+</head>
+
+<body>
+    <div class="content">
+        <button class="btn main">Click Me</button>
+        <div>
+            <button class="btn disable">Disable Button</button>
+            <button class="btn enable">Enable Button</button>
+        </div>
+    </div>
+
+    <script>
+        let main = document.querySelector('.main');
+        document.querySelector('.disable').addEventListener('click', function () {
+            main.classList.add('main-disabled');
+        })
+
+        document.querySelector('.enable').addEventListener('click', function () {
+            main.classList.remove('main-disabled');
+        })
+    </script>
+</body>
+
+</html>

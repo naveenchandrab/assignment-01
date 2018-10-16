@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .content-one,
+        .content-two,
+        .content-three {
+            width: 200px;
+            height: 200px;
+        }
+
+        .circle-one,
+        .circle-two,
+        .circle-three {
+            width: 60px;
+            height: 60px;
+            border-radius: 80px;
+        }
+
+        .content-one {
+            background: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-two {
+            background: orange;
+            position: relative;
+        }
+
+        .content-three {
+            background: violet;
+            position: relative;
+        }
+
+        .circle-one {
+            background: red;
+        }
+
+        .circle-two {
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle-three {
+            background: blue;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <title>Q4 – Aligning Boxes</title>
+</head>
+
+<body>
+
+    <!-- Using Flex-box -->
+    <div class="content-one">
+        <div class="circle-one"></div>
+    </div>
+
+    <!-- Using Positon & Transform -->
+    <div class="content-two">
+        <div class="circle-two"></div>
+    </div>
+
+    <!-- Using Position Margin -->
+    <div class="content-three">
+        <div class="circle-three"></div>
+    </div>
+
+</body>
+
+</html>
