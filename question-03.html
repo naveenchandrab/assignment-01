@@ -9,6 +9,7 @@
         body {
             height: 100vh;
             background-color: #c9c7c7;
+            perspective: 1000px
         }
 
         .card-two,
@@ -44,13 +45,13 @@
         }
 
         .card-one {
-            transform: rotate3d(11, 142, 5, 57deg) translate(-51%, -45%);
+            transform: rotateY(-20deg) translate(-51%, -45%);
             position: relative;
             top: 0;
         }
 
         .card-two {
-            transform: rotate3d(-3, 1054, 6, -124deg);
+            transform: rotateY(40deg);
             position: relative;
             top: 0;
         }
@@ -72,12 +73,12 @@
     <div class="content">
         <div class="card-two">
             <div class="card-two-bar"></div>
-            <iframe width="620" height="234" src="https://www.youtube.com/embed/QwievZ1Tx-8" frameborder="0" allow="autoplay; encrypted-media"
+            <iframe width="400" height="234" src="https://www.youtube.com/embed/QwievZ1Tx-8" frameborder="0" allow="autoplay; encrypted-media"
                 allowfullscreen></iframe>
         </div>
         <div class="card-one">
             <div class="card-one-bar"> </div>
-            <iframe width="620" height="234" src="https://www.youtube.com/embed/K4zm30yeHHE" frameborder="0" allow="autoplay; encrypted-media"
+            <iframe width="400" height="234" src="https://www.youtube.com/embed/K4zm30yeHHE" frameborder="0" allow="autoplay; encrypted-media"
                 allowfullscreen></iframe>
         </div>
     </div>
